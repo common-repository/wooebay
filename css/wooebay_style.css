@@ -1,0 +1,409 @@
+﻿/*fonts*/
+@font-face {
+    font-family: 'fontello';
+    src: url('../img/fontello.eot?9404346');
+    src: url('../img/fontello.eot?9404346#iefix') format('embedded-opentype'),
+    url('../img/fontello.woff2?9404346') format('woff2'),
+    url('../img/fontello.woff?9404346') format('woff'),
+    url('../img/fontello.ttf?9404346') format('truetype'),
+    url('../img/fontello.svg?9404346#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-ebay:before { content: '\e800'; } /* '' */
+
+/*#woocommerce-product-data ul.wc-tabs li.wooebay_product_options a:before { content: ''; font-family: "";}*/
+#woocommerce-product-data ul.wc-tabs li.wooebay_product_options a:before { content: '\e800'; font-family: "fontello"; font-size: 18px;}
+
+
+.wooebay-userinfo {
+    display: flex;
+    align-items: center;
+}
+.wooebay-userinfo span {
+    padding: 0px 5px;
+    font-weight: bold;
+    color: #0000cc;
+}
+
+/*tabs*/
+.wooebay-tabs-menu > a,
+.wooebay-tabs-menu > div {
+    padding: 5px; /*border: 1px solid #aaa;*/
+}
+
+.wooebay-tabs-menu > a {
+    line-height: 28px; background: #F0F0F0; text-decoration: none; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.wooebay-tabs-menu {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+/*wooebay-tab-content*/
+.wooebay-tab-content {
+    height: auto;
+}
+/*table*/
+.wooebay-table {
+    height: 500px;
+    overflow-y: auto;
+}
+.wooebay-data-settings table td {
+    padding: 5px 5px;
+    cursor: pointer;
+    vertical-align: middle;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.wooebay-data-settings table th{
+    text-align: center;
+}
+
+/*wooebay-tree*/
+.wooebay-controls-main {
+    background: #fff;
+    z-index: 1;
+    padding: 6px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.wooebay-controls-main-main {
+    display: flex;
+    align-items: center;
+}
+
+.wooebay-controls-main button {
+    border: 0px;
+    color: #0073aa;
+    margin: 4px;
+    padding: 4px 12px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.wooebay-controls-main button:hover {
+    background-color: transparent;
+    color: #00a0d2;
+}
+
+.wooebay-tree-panel {
+    margin: 8px auto;
+    width: 98%;
+    background: #f0f5fd;
+    z-index: 1;
+    padding: 0px 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.wooebay-tree-panel button {
+    border: 0px;
+    color: #0073aa;
+    margin: 4px;
+    padding: 4px 12px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.wooebay-tree-panel button:hover {
+    background-color: transparent;
+    color: #00a0d2;
+}
+
+input[type=checkbox] {
+    vertical-align: middle !important;
+}
+
+.wooebay-tree-wrapper, .wooebay-data-wrapper, .wooebay-data-settings {
+    height: auto;
+}
+
+.wooebay-tree, .wooebay-tree-data ,.wooebay-data-settings{
+    margin: 2% auto;
+    width: 95%;
+}
+
+.wooebay-tree .wooebay-has, .wooebay-tree-data .wooebay-has ,.wooebay-data-settings{
+
+    padding: 6px 18px;
+}
+
+.wooebay-has img {
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.wooebay-has label {
+    padding-left: 40px;
+    position: relative;
+}
+
+.wooebay-data-label {
+    padding: 0 15px;
+    flex: 0 0 24%;
+}
+
+.wooebay-has-tab-data {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.wooebay-has-tab-data .wooebay-data-text, .wooebay-data-settings .form-table .regular-text {
+    flex: 1 0 auto;
+    background: #f0f5fd;
+}
+.wooebay-data-text {
+    display: none;
+}
+
+.wooebay-has-tab-data .wooebay-data-item {
+    flex: 0 0 auto;
+}
+
+.wooebay-tree ul, .wooebay-tree-data ul {
+    /*display: none;*/
+    margin: 4px auto;
+    margin-left: 6px;
+    border-left: 1px dashed #dfdfdf;
+}
+
+.wooebay-tree li, .wooebay-data-settings .form-table tr {
+    padding: 6px 18px;
+    cursor: pointer;
+    vertical-align: middle;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.wooebay-tree li {
+    background: #fff;
+}
+.wooebay-data-settings .form-table tr {
+    background: #fff;
+
+}
+
+.wooebay-tree-data li {
+    padding: 6px 18px;
+    cursor: pointer;
+    vertical-align: middle;
+    background: #fff;/*#EFF2FF;*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.wooebay-tree li:first-child, .wooebay-tree-data li:first-child {
+    border-radius: 3px 3px 0 0;
+}
+
+.wooebay-tree li:last-child, .wooebay-tree-data li:last-child {
+    border-radius: 0 0 3px 3px;
+}
+
+.wooebay-tree .active,
+.active li {
+    background: #efefef;
+}
+
+.wooebay-tree label {
+    cursor: pointer;
+}
+
+.wooebay-tree input[type=checkbox] {
+    margin: -2px 6px 0 0px;
+}
+
+.wooebay-has > label {
+    color: #000;
+}
+
+.wooebay-tree .total {
+    color: #e13300;
+}
+
+.wooebay-tree .group-item {
+    font-weight: 600;
+}
+
+.wooebay-mess pre{
+    display: none;
+}
+.wooebay-mess, .wooebay-mess-data {
+    color: #000;
+    flex: 1 0 auto;
+    padding-left: 10px;
+}
+.wooebay-mess p, .wooebay-mess-data p {
+    margin: 0;
+    padding: 0px 10px;
+}
+
+.wooebay-mess-ok-export, .wooebay-mess-ok-delete, .wooebay-mess-ok-data, .wooebay-mess-def-info {
+    background: #7acaff59;
+}
+.wooebay-mess-start-export, .wooebay-mess-info {
+    background: #7ad03a40;
+}
+.wooebay-mess-error {
+    background: #e6402a3d;
+}
+.wooebay-mess-empty, .wooebay-mess-data-empty {
+    background: #fff60061;
+}
+
+.label-payment, .label-shipping {
+    width: 40px;
+    height: 70px;
+    display: block;
+    position: relative;
+    float: right;
+    padding-right: 25%;
+}
+.wooebay-checkbox-options + .wooebay-span-options{
+    position: absolute;
+    left: 16px; top: 0;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    float: right;
+}
+
+.wooebay-checkbox-options:checked + .wooebay-span-options{
+    background-position: 0 -26px;
+}
+
+.wooebay-main-description {
+    float: left;
+    padding: inherit;
+}
+
+.wooebay-developer-mode1 {
+    color: #0073aa;
+    float: right;
+    cursor: pointer;
+    padding-top: 3px;
+    padding-right: 10px;
+}
+.wooebay-developer-mode1:hover {
+    background-color: transparent;
+    color: #00a0d2;
+}
+.wooebay-developer-mode2 {
+    color: #0073aa;
+    float: right;
+    cursor: pointer;
+    transform: translateY(50%);
+}
+
+.wrap {
+    position: relative;
+}
+
+.wooebay-ebay-res, .wooebay-ebay-gen {
+    float: right;
+}
+.wooebay-ebay-res a, .wooebay-ebay-gen a {
+    text-decoration: none;
+    padding: 5px ;
+    cursor: pointer
+}
+
+.wooebay-ebay-res {
+    align-items: center;
+    position: relative;
+}
+
+.wooebay-ebay-res .wooebay-ebay-done, .wooebay-ebay-res  .wooebay-ebay-done-done{
+    position: static;
+    padding-right: 10px;
+    -moz-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    height: 16px;
+
+}
+
+.wooebay-controls-main-filter {
+    padding: 5px;
+}
+.wooebay-woo-product-ebay-panel p {
+    height: 10px;
+    line-height: 1;
+    z-index: 1;
+    padding: 6px 10px;
+    align-items: center;
+    text-align: center;
+}
+.wooebay-woo-product-ebay {
+    background: #fff;
+    z-index: 1;
+    padding: 0px 10px;
+    /*box-shadow: 0px 0px 10px #00a0d2;*/
+}
+.wooebay-woo-product-ebay #wooebay-product-ebay-theme, .wooebay-woo-product-ebay #wp-picker-container {
+    margin: 0 5px;
+    height: 24px;
+}
+#wooebay_woocommerce_custom_product_tabs .wooebay-controls-main {
+    height: 24px;
+}
+
+.wooebay_product_options {
+    display: block !important;
+}
+
+.woo_product_wooebay .wooebay-controls-main {
+    box-shadow: none;
+}
+
+#wooebay_product .form-field {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wooebay-ebay-res {
+    display: flex;
+}

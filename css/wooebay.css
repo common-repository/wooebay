@@ -1,0 +1,26 @@
+﻿
+/*avtogenerit*/
+#wooebay-tab-settings, #wooebay-tab-data, #wooebay-tab-export {position: fixed; }
+.wooebay-tabs-menu #wooebay-tab-data:target ~ a:nth-of-type(1),
+.wooebay-tabs-menu #wooebay-tab-export:target ~ a:nth-of-type(1){
+    padding: 5px; border: 1px solid #aaa;
+}
+/**/
+#wooebay-tab-data,
+#wooebay-tab-export,
+.wooebay-tabs-menu > div,
+.wooebay-tabs-menu #wooebay-tab-data:target ~ div:nth-of-type(1),
+.wooebay-tabs-menu #wooebay-tab-export:target ~ div:nth-of-type(1) {display: none; }
+
+.wooebay-tabs-menu > div:nth-of-type(1),
+.wooebay-tabs-menu #wooebay-tab-data:target ~ div:nth-of-type(2),
+.wooebay-tabs-menu #wooebay-tab-export:target ~ div:nth-of-type(3) { display: block; }
+
+.wooebay-tabs-menu > a:nth-of-type(1),
+.wooebay-tabs-menu #wooebay-tab-data:target ~ a:nth-of-type(2),
+.wooebay-tabs-menu #wooebay-tab-export:target ~ a:nth-of-type(3) { border-bottom: 2px solid #85dffd; }
+/**/
+/*****/
+
+
+
